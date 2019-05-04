@@ -1,1 +1,2 @@
 - Fernando Oliveira <nandooliveira.al@gmail.com>
+- Lucas Amorim de Lima Araújo <lucas.ala1999@gmail.com>
