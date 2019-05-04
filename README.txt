@@ -1,1 +1,1 @@
-- Peter Alexandre <petermiguel99@gmail.com>
+- [Peter Alexandre](petermiguel99@gmail.com)
