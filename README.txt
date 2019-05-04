@@ -1,1 +1,2 @@
 - Fernando Oliveira <nandooliveira.al@gmail.com>
+- Luciano Costa <luum.costa@gmail.com>
