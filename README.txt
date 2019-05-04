@@ -1,1 +1,2 @@
 - Fernando Oliveira <nandooliveira.al@gmail.com>
+- Jean <jeancsantoscdc@gmail.com>
