@@ -1,4 +1,5 @@
 - Fernando Oliveira <nandooliveira.al@gmail.com>
+- Lucas Amorim de Lima Araújo <lucas.ala1999@gmail.com>
 - Iuri Barrel <iurib11@hotmail.com>
 - Allysson Melo
 - Pericles <periclesterto@gmail.com>
