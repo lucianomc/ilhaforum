@@ -1,4 +1,5 @@
 - Fernando Oliveira <nandooliveira.al@gmail.com>
+- Jean <jeancsantoscdc@gmail.com>
 - Luciano Costa <luum.costa@gmail.com>
 - Victor Meneghini <vhmeneghini@gmail.com>
 - Victor Sotero <victorvcdb@gmail.com>
