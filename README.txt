@@ -1,2 +1,8 @@
 - Fernando Oliveira <nandooliveira.al@gmail.com>
 - Allysson Melo
+- Pericles <periclesterto@gmail.com>
+- Jean <jeancsantoscdc@gmail.com>
+- Luciano Costa <luum.costa@gmail.com>
+- Victor Meneghini <vhmeneghini@gmail.com>
+- Victor Sotero <victorvcdb@gmail.com>
+- Peter Alexandre <petermiguel99@gmail.com>
