@@ -1,4 +1,5 @@
 - Fernando Oliveira <nandooliveira.al@gmail.com>
+- Iuri Barrel <iurib11@hotmail.com>
 - Allysson Melo
 - Pericles <periclesterto@gmail.com>
 - Jean <jeancsantoscdc@gmail.com>
