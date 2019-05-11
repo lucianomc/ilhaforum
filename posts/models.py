@@ -42,3 +42,33 @@ class Enrollment(models.Model):
 class Course(models.Model):
     name = models.CharField(max_length=500)
     users = models.ManyToManyField(User, through=Enrollment)
+
+
+class Quiz(models.Model):
+    name = models.CharField(max_length=100)
+    created_at = models.DateTimeField(auto_now_add=True)
+    questions = models.ManyToManyField('Question', through='RelQuizQuestion')
+
+
+class RelQuizQuestion(models.Model):
+    quiz = models.ForeignKey('Quiz', on_delete=models.CASCADE)
+    question = models.ForeignKey('Question', on_delete=models.CASCADE)
+
+# quiz.questions
+# question.quiz_set.all()
+
+class Question(models.Model):
+    name = models.CharField(max_length=100)
+    correct_option = models.ForeignKey('Option', on_delete=models.CASCADE, related_name='relation_question')
+    users = models.ManyToManyField(User, through='Answer')
+
+
+class Option(models.Model):
+    question = models.ForeignKey('Question', on_delete=models.CASCADE)
+    description = models.CharField(max_length=255)
+
+
+class Answer(models.Model):
+    question = models.ForeignKey('Question', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    option = models.ForeignKey('Option', on_delete=models.CASCADE)
