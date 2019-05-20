@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Ilhs Soft Forum</title>
+  </head>
+  <body>
+    <h1>Fórums</h1>
+    <ul>
+      {% for forum in forums %}
+      <li>
+        <a href="{% url 'forums:show' forum.id %}">{{ forum.description }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
