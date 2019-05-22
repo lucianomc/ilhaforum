@@ -33,6 +33,7 @@ class Comment(models.Model):
 class Address(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     street = models.CharField(max_length=500)
+    #testando o git
 
 
 class Enrollment(models.Model):
