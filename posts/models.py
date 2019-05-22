@@ -34,6 +34,7 @@ class Address(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     street = models.CharField(max_length=500)
     #testando o git
+    #testando as branchs
 
 
 class Enrollment(models.Model):
