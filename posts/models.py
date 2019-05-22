@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-
+from forums.models import Topic
 
 class Post(models.Model):
     SCORES = (
@@ -10,6 +10,7 @@ class Post(models.Model):
         (4, 'Muito Bom'),
         (5, 'Ótimo')
     )
+    topic = models.ForeignKey(Topic, on_delete=models.CASCADE, null=True)
     title = models.CharField(max_length=500, null=True, blank=True)
     content = models.TextField()
     author = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -59,7 +60,7 @@ class RelQuizQuestion(models.Model):
 
 class Question(models.Model):
     name = models.CharField(max_length=100)
-    correct_option = models.ForeignKey('Option', on_delete=models.CASCADE, related_name='relation_question')
+    correct_option = models.ForeignKey('Option', on_delete=models.CASCADE, related_name='relation_question', null=True)
     users = models.ManyToManyField(User, through='Answer')
 
 
