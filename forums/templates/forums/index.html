@@ -12,7 +12,7 @@
     <ul>
         {% for forum in forums %}
             <li>
-                <a href="{% url 'show' forum.id %}">
+                <a href="{% url 'forums:show' forum.id %}">
                     {{ forum.description }}
                 </a>
             </li>
