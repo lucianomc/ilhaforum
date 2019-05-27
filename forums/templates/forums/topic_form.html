@@ -5,23 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Tópico</title>
 </head>
 <body>
 
-<h1>Fórum: </h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" />
+</form>
 
-{{ forum.description }}
-
-<h3>Tópicos</h3>
-
-<ul>
-{% for topic in forum.topic_set.all %}
-    <li>
-        <a href="{% url 'forums:topic_details' topic.id %}">{{ topic.name }}</a>
-    </li>
-{% endfor %}
-</ul>
 </body>
 </html>
-

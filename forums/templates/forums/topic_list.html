@@ -7,15 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Fórums</h1>
-
+    <h1>Tópicos</h1>
+    
     <ul>
-        {% for forum in forums %}
-            <li>
-                <a href="{% url 'show' forum.id %}">
-                    {{ forum.description }}
-                </a>
-            </li>
+        {% for object in object_list %}
+            <li>{{object.name}}</li>
         {% endfor %}
     </ul>
 </body>
