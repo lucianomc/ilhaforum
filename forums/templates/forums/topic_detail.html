@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Topic Details</title>
+</head>
+<body>
+<h1>Tópico</h1>
+
+<p><b>Nome:</b> {{ topic.name }}</p>
+<a><b>Fórum:</b> <a href="{% url 'forums:show' topic.forum.id %}">{{ topic.forum.description }}</a></p>
+
+<p>
+    <a href="{% url 'forums:topic_create' %}">Novo Tópico</a>
+    <a href="{% url 'forums:topic_update' topic.id %}">Atualizar</a>
+</p>
+</body>
+</html>
