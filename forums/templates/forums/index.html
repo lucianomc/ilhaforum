@@ -1,13 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+{% extends '../base.html' %}
+
+{% load email_link %}
+
+{% block content %}
     <h1>Fórums</h1>
+    
+    <p>
+        {% email_link 'nandooliveira.al@gmail.com' %}
+    </p>
+    
+    <p>
+        {{ 'fernando'|uppercase }}
+    </p>
 
     <ul>
         {% for forum in forums %}
@@ -18,5 +22,10 @@
             </li>
         {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+    // alert("É pau, quando Deus quer é assim!");
+</script>
+{% endblock %}
